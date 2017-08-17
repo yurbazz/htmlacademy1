@@ -1,0 +1,202 @@
+body,p,h1,h2,h3,h4,ul {
+	margin: 0px;
+}
+
+.layout-positioner {
+	width: 880px;
+	padding: 0px 10px;
+	margin: 0px auto;
+	border: solid 1px violet;
+}
+
+.clearfix::after {
+	display:table;
+	clear:both;
+	content:""
+}
+
+.btn {
+	display: inline-block;
+	font-size: 12px;
+}
+
+.red-mark {
+	width: 25px;
+	min-height: 2px;
+	background-color: #fb565a;
+	position: absolute;
+	margin-left: -40px;
+	margin-top: 8px;
+}
+
+/* MAIN HEADER */
+
+.main-header {
+	min-height: 328px;
+	background-color: #EEE;
+	border-top: 1px solid transparent;
+}
+
+.main-header .layout-positioner:nth-child(1) {
+	margin-top: 25px;
+}
+
+.main-header .layout-positioner:nth-child(2) {
+	margin-top: 40px;
+}
+
+.main-logo {
+	width: 140px;
+	min-height: 70px;
+	float: left;
+	border: solid 1px;
+}
+
+.main-navigation {
+	width: 500px;
+	min-height: 70px;
+	float: right;
+	border: solid 1px;
+}
+
+.main-navigation li {
+	display: inline;
+}
+
+.recycle-block {
+	width: 100px;
+	min-height: 70px;
+	float: right;
+	padding-left: 60px;
+	border: solid 1px;
+}
+
+.promo-left {
+	width: 470px;
+	float: left;
+	min-height: 310px;
+	border: solid 1px;
+}
+
+.promo-right {
+	width: 340px;
+	float: right;
+	min-height: 310px;
+	border: solid 1px;
+}
+
+.promo-text b {
+	display: block;
+	font-size: 24px;
+	padding-top: 30px;
+}
+
+.promo-text span {
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.slider-checkbox-outer {
+	display: inline-block;
+	float: right;
+	width: 10px;
+	height: 10px;
+	background-color: #FFF;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.slider-checkbox-outer:first-of-type {
+	margin-right: 16px;
+}
+
+/* MAIN BLOCK */
+
+main {
+	margin-top: 80px;
+}
+
+main .layout-positioner {
+	border-bottom: 2px #eee solid;
+}
+
+main .services {
+	padding-bottom: 80px;
+	min-height: 380px;
+	font-size: 0px;
+}
+
+.service-item {
+	display: inline-block;
+	width: 240px;
+	margin-right: 80px;
+}
+
+.service-item:last-child {
+	margin-right: 0px;
+}
+
+.service-item h2 {
+	font-size: 18px;
+}
+
+.service-item p {
+	font-size: 15px;
+}
+
+/* ABOUT-BRIEF */
+
+.about-brief {
+	margin-top: 75px;
+}
+
+.about-brief h2 {
+	font-size: 36px;
+	margin-bottom: 14px;
+}
+
+.about-brief p {
+	font-size: 16px;
+	margin-bottom: 38px;
+}
+
+.about-brief h3.list-header {
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 28px;
+}
+
+.about-brief .left-block {
+	width: 570px;
+	float: left;
+	border: solid 1px;
+}
+
+.about-brief .right-block {
+	width: 240px;
+	float: right;
+	border: solid 1px;
+}
+
+.about-brief ul {
+	list-style-type: none;
+}
+
+.about-brief li {
+	font-size: 16px;
+	padding-bottom: 28px;
+}
+
+.about-brief img {
+	padding-bottom: 54px;
+}
+
+.sponsors {
+	margin-top: 46px;
+}
+
+.sponsor-item {
+	display: inline-block;
+	margin-right: 50px;
+}
