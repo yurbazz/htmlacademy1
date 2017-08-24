@@ -1,5 +1,20 @@
+/* COMMON STYLES */
+
 body,p,h1,h2,h3,h4,ul {
 	margin: 0px;
+}
+
+ul {
+	padding: 0px;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.text-accented {
+	font-size: 36px;
 }
 
 .layout-positioner {
@@ -16,8 +31,15 @@ body,p,h1,h2,h3,h4,ul {
 }
 
 .btn {
+	border: 1px dotted black;
 	display: inline-block;
 	font-size: 12px;
+	height: 38px;
+	box-sizing: border-box;
+	padding-top: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 3px;
 }
 
 .red-mark {
@@ -45,6 +67,13 @@ body,p,h1,h2,h3,h4,ul {
 	margin-top: 40px;
 }
 
+.main-header h1 {
+	font-size: 40px;
+	padding-top: 10px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
 .main-logo {
 	width: 140px;
 	min-height: 70px;
@@ -54,22 +83,31 @@ body,p,h1,h2,h3,h4,ul {
 
 .main-navigation {
 	width: 500px;
-	min-height: 70px;
+	min-height: 44px;
 	float: right;
+	padding-top: 26px;
 	border: solid 1px;
 }
 
 .main-navigation li {
 	display: inline;
+	padding-left: 45px;
+	text-align: right;
+	font-size: 14px;
 }
 
 .recycle-block {
 	width: 100px;
-	min-height: 70px;
+	min-height: 44px;
 	float: right;
 	padding-left: 60px;
+	padding-top: 26px;
 	border: solid 1px;
+	text-align: right;
+	font-size: 14px;
 }
+
+/* PROMO SLIDER */
 
 .promo-left {
 	width: 470px;
@@ -87,7 +125,6 @@ body,p,h1,h2,h3,h4,ul {
 
 .promo-text b {
 	display: block;
-	font-size: 24px;
 	padding-top: 30px;
 }
 
@@ -95,6 +132,10 @@ body,p,h1,h2,h3,h4,ul {
 	display: block;
 	padding-top: 20px;
 	padding-bottom: 30px;
+}
+
+.promo-text .btn {
+	width: 240px;
 }
 
 .slider-checkbox-outer {
@@ -127,6 +168,8 @@ main .services {
 	font-size: 0px;
 }
 
+/* MAIN SERVICES */
+
 .service-item {
 	display: inline-block;
 	width: 240px;
@@ -137,15 +180,25 @@ main .services {
 	margin-right: 0px;
 }
 
+.service-item img {
+	margin-bottom: 22px;
+}
+
 .service-item h2 {
 	font-size: 18px;
+	margin-bottom: 18px;
 }
 
 .service-item p {
 	font-size: 15px;
+	margin-bottom: 28px;
 }
 
-/* ABOUT-BRIEF */
+.service-item .btn {
+	width: 140px;
+}
+
+/* MAIN ABOUT-BRIEF */
 
 .about-brief {
 	margin-top: 75px;
@@ -179,24 +232,127 @@ main .services {
 	border: solid 1px;
 }
 
-.about-brief ul {
-	list-style-type: none;
-}
-
 .about-brief li {
 	font-size: 16px;
 	padding-bottom: 28px;
+	padding-left: 40px;
 }
 
 .about-brief img {
 	padding-bottom: 54px;
 }
 
-.sponsors {
+/* MAIN SPONSORS */
+
+.sponsors-block {
 	margin-top: 46px;
+	min-height: 120px;
 }
 
 .sponsor-item {
 	display: inline-block;
-	margin-right: 50px;
+	margin-right: 120px;
+	vertical-align: middle;
+}
+
+.sponsor-item:last-child {
+	margin-right: 0px;
+}
+
+.sponsor-item img {
+	opacity: 0.2;
+}
+
+.sponsor-item img:hover {
+	opacity: 1;
+}
+
+/* SETTINGS BLOCK */
+
+form.settings {
+	border: 1px solid black;
+	width: 240px;
+	float: left;
+}
+
+/* LAYOUTS-CATALOG */
+
+.layouts_catalog {
+	border: 1px solid black;
+	width: 560px;
+	float: right;
+}
+
+/* FOOTER BLOCK */
+
+.main-footer {
+	margin-top: 86px
+}
+
+.find-us-map {
+	position: relative;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mark-on-map {
+	position: absolute;
+	left: 840px;
+	top: 110px;
+}
+
+.main-footer .write-us {
+	width: 208px;
+	height: 186px;
+	position: absolute;
+	left: 160px;
+	top: 85px;
+	background-color: white;
+	padding: 28px 22px 26px 20px;
+}
+
+.main-footer .write-us b {
+	padding-bottom: 20px;
+	display: block;
+}
+
+.main-footer .write-us p {
+	padding-bottom: 25px;
+}
+
+.main-footer .write-us .btn {
+	width: 100%;
+}
+
+/* FOOTER SOCIAL */
+
+.main-footer-social {
+	margin-top: 80px;
+	margin-bottom: 70px;
+}
+
+.main-footer-social .left-block {
+	width: 310px;
+	float: left;
+	padding-top: 8px;
+}
+
+.main-footer-social .right-block {
+	width: 550px;
+	padding: 0 10px;
+	float: left;
+}
+
+a.social-roundel {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 60px;
+	height: 60px;
+	background-color: #e1e1e1;
+	border-radius: 50%;
+	float: left;
+	margin-right: 26px;
+	padding-top: 15px;
+	text-align: center;
 }
