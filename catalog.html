@@ -45,14 +45,18 @@
                     <legend>
                         СТОИМОСТЬ:
                     </legend>
-                    <div class="range">
+                    <div class="price-range">
+                        <div class="outer-ring">
+                            <div class="inner-ring">
+                            </div>
+                        </div>
                         <div class="green-line">
                         </div>
+                        <div class="outer-ring">
+                            <div class="inner-ring">
+                            </div>
+                        </div>
                         <div class="gray-line">
-                        </div>
-                        <div class="range_circle">
-                        </div>
-                        <div class="range_circle">
                         </div>
                     </div>
                     <label for="min_price">ОТ</label>
@@ -64,27 +68,43 @@
                     <legend>
                         СЕТКА:
                     </legend>
-                    <input type="radio" name="grid_type" id="grid_adapt" checked/>
-                    <label for="grid_adapt">Адаптивная</label>
-                    <input type="radio" name="grid_type" id="grid_fixed" />
-                    <label for="grid_adapt">Фиксированная</label>
-                    <input type="radio" name="grid_type" id="grid_rubber" />
-                    <label for="grid_adapt">Резиновая</label>
+                    <div class="select-block">
+                        <input type="radio" name="grid_type" id="grid_adapt" checked/><span></span>
+                        <label for="grid_adapt">Адаптивная</label>
+                    </div>
+                    <div class="select-block">
+                        <input type="radio" name="grid_type" id="grid_fixed" /><span></span>
+                        <label for="grid_fixed">Фиксированная</label>
+                    </div>
+                    <div class="select-block">
+                        <input type="radio" name="grid_type" id="grid_rubber" /><span></span>
+                        <label for="grid_rubber">Резиновая</label>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>
                         ОСОБЕННОСТИ:
                     </legend>
-                    <input type="checkbox" name="features" id="f_slider" checked/>
-                    <label for="f_slider">Слайдер</label>
-                    <input type="checkbox" name="features" id="f_advant" />
-                    <label for="f_advant">Блок приемуществ</label>
-                    <input type="checkbox" name="features" id="f_news" checked/>
-                    <label for="f_news">Новости</label>
-                    <input type="checkbox" name="features" id="f_galery" />
-                    <label for="f_galery">Галерея</label>
-                    <input type="checkbox" name="features" id="f_bin" />
-                    <label for="f_bin">Корзина</label>
+                    <div class="select-block">
+                        <input type="checkbox" name="features" id="f_slider" checked/><span></span>
+                        <label for="f_slider">Слайдер</label>
+                    </div>
+                    <div class="select-block">
+                        <input type="checkbox" name="features" id="f_advant" /><span></span>
+                        <label for="f_advant">Блок приемуществ</label>
+                    </div>
+                    <div class="select-block">
+                        <input type="checkbox" name="features" id="f_news" checked/><span></span>
+                        <label for="f_news">Новости</label>
+                    </div>
+                    <div class="select-block">
+                        <input type="checkbox" name="features" id="f_galery" /><span></span>
+                        <label for="f_galery">Галерея</label>
+                    </div>
+                    <div class="select-block">
+                        <input type="checkbox" name="features" id="f_bin" /><span></span>
+                        <label for="f_bin">Корзина</label>
+                    </div>
                 </fieldset>
                 <button>Показать</button>
             </form>

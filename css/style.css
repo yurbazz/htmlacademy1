@@ -1,12 +1,16 @@
 /* COMMON STYLES */
 
-body,p,h1,h2,h3,h4,ul {
+body,p,h1,h2,h3,h4,ul,fieldset,input {
 	margin: 0px;
 }
 
-ul {
+ul,fieldset,legend,input {
 	padding: 0px;
 	list-style-type: none;
+}
+
+fieldset,input {
+	border: 0px;
 }
 
 a {
@@ -273,6 +277,129 @@ form.settings {
 	border: 1px solid black;
 	width: 240px;
 	float: left;
+	font-size: 0px;
+}
+
+.settings fieldset {
+	margin-bottom: 50px;
+}
+
+.settings legend {
+	padding-bottom: 14px;
+	font-size: 18px;
+}
+
+.settings label {
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.settings input[type=text] {
+	display: inline-block;
+	height: 38px;
+	width: 80px;
+	border-radius: 5px;
+	background-color: #f1f1f1;
+	vertical-align: middle;
+	font-size: 16px;
+	margin-left: 10px;
+}
+
+.settings input[type=text]:nth-of-type(1) {
+	margin-right: 16px;
+}
+
+.settings input[type=radio] {
+	display: none;
+}
+
+.settings input[type=radio] + span {
+	display: inline-block;
+	content: "";
+	width: 22px;
+	height: 22px;
+	border: 2px solid #c1c1c1;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.settings input[type=checkbox] {
+	display: none;
+}
+
+.settings input[type=checkbox] + span {
+	display: inline-block;
+	content: "";
+	width: 26px;
+	height: 26px;
+	border: 2px solid #c1c1c1;
+	border-radius: 5px;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.settings .select-block {
+	margin-bottom: 16px;
+}
+
+.settings .select-block:last-child {
+	margin-bottom: 0px;
+}
+
+/* SETTINGS price-range */
+
+.price-range {
+	position: relative;
+	width: 240px;
+	height: 80px;
+	border-radius: 5px;
+	background-color: #f1f1f1;
+	margin-bottom: 14px;
+}
+
+.price-range .outer-ring {
+	position: absolute;
+	left: 20px;
+	top: 30px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow:  0 2px rgba(0,1,1,0.15);
+}
+
+.price-range .outer-ring:nth-child(1) {
+	left: 160px;
+}
+
+.price-range .inner-ring {
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: #ababab;
+}
+
+.price-range .green-line {
+	position: absolute;
+	top: 39px;
+	left: 40px;
+	width: 120px;
+	height: 2px;
+	background-color: #00ca74;
+}
+
+.price-range .gray-line {
+	position: absolute;
+	top: 39px;
+	left: 180px;
+	width: 40px;
+	height: 2px;
+	background-color: #d7dcde;
 }
 
 /* LAYOUTS-CATALOG */
