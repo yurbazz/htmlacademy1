@@ -1,20 +1,23 @@
 /* COMMON STYLES */
 
-body,p,h1,h2,h3,h4,ul,fieldset,input {
+body {
+	min-width: 900px;
+	margin: 0px;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+p,h3,h4,fieldset,input {
 	margin: 0px;
 }
 
-ul,fieldset,legend,input {
+fieldset,legend,input {
 	padding: 0px;
-	list-style-type: none;
 }
 
 fieldset,input {
 	border: 0px;
-}
-
-ul {
-	display: inline-block;
 }
 
 a {
@@ -29,8 +32,16 @@ button {
 	border-radius: 5px;
 }
 
+button:disabled,
+button:disabled:hover {
+	background-color: #fff;
+	outline-color: #f1f1f1;
+}
+
 .text-accented {
 	font-size: 36px;
+	line-height: 36px;
+	font-weight: normal;
 }
 
 .layout-positioner {
@@ -47,15 +58,53 @@ button {
 }
 
 .btn {
-	border: 1px dotted black;
+	outline: none;
 	display: inline-block;
+	vertical-align: top;
 	font-size: 12px;
-	height: 38px;
+	line-height: 18px;
+	background-color: #fb565a;
+	color: #FFF;
 	box-sizing: border-box;
-	padding-top: 10px;
+	padding: 10px 0;
 	text-transform: uppercase;
 	text-align: center;
 	border-radius: 3px;
+}
+
+.btn:hover {
+	background-color: #d6494d;
+}
+
+.btn:active {
+	background-color: #b63538;
+	box-shadow:  inset 0 3px rgba(0,0,0,0.15);
+}
+
+.btn-green {
+	background-color: #00ca74;
+}
+
+.btn-green:hover {
+	background-color: #01a25e;
+}
+
+.btn-green:active {
+	background-color: #009053;
+	box-shadow:  inset 0 3px rgba(0,0,0,0.15);
+}
+
+.btn-yellow {
+	background-color: #efc84a;
+}
+
+.btn-yellow:hover {
+	background-color: #d6ae2c;
+}
+
+.btn-yellow:active {
+	background-color: #c09b24;
+	box-shadow:  inset 0 3px rgba(0,0,0,0.15);
 }
 
 .red-mark {
@@ -72,6 +121,7 @@ button {
 .main-header {
 	min-height: 328px;
 	background-color: #EEE;
+	color: #000;
 	border-top: 1px solid transparent;
 }
 
@@ -85,7 +135,12 @@ button {
 
 .main-header h1 {
 	font-size: 40px;
+	font-weight: normal;
+	line-height: 48px;
 	padding-top: 10px;
+	padding-left: 105px;
+	padding-right: 115px;
+	margin: 0;
 	text-transform: uppercase;
 	text-align: center;
 }
@@ -98,15 +153,37 @@ button {
 }
 
 .main-navigation {
-	width: 500px;
-	min-height: 44px;
 	float: right;
 	padding-top: 26px;
-	border: solid 1px;
 }
 
-.main-navigation li {
-	display: inline;
+.main-navigation a:link, .main-navigation a:visited {
+	color: #000;
+}
+
+.main-navigation a:hover {
+	color: #fb565a;
+}
+
+.main-navigation a:active {
+	color: #000;
+	opacity: 0.4;
+}
+
+.menu-navigation {
+	width: 500px;
+	float: right;
+}
+
+.menu-navigation ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.menu-navigation li {
+	display: inline-block;
+	vertical-align: top;
 	padding-left: 45px;
 	text-align: right;
 	font-size: 14px;
@@ -114,29 +191,35 @@ button {
 
 .recycle-block {
 	width: 100px;
-	min-height: 44px;
 	float: right;
 	padding-left: 60px;
-	padding-top: 26px;
-	border: solid 1px;
 	text-align: right;
 	font-size: 14px;
 }
 
 /* PROMO SLIDER */
 
-.promo-left {
+.main-header .promo-left {
 	width: 470px;
 	float: left;
 	min-height: 310px;
 	border: solid 1px;
 }
 
-.promo-right {
+.main-header .promo-right {
+	position: relative;
 	width: 340px;
 	float: right;
 	min-height: 310px;
 	border: solid 1px;
+}
+
+.main-header .promo-right img {
+	position:absolute
+}
+
+.main-header .promo-right img:first-child {
+	z-index: 10;
 }
 
 .promo-text b {
@@ -220,7 +303,7 @@ main .services {
 }
 
 .about-brief h2 {
-	font-size: 36px;
+	margin-top: 0px;
 	margin-bottom: 14px;
 }
 
@@ -245,6 +328,12 @@ main .services {
 	width: 240px;
 	float: right;
 	border: solid 1px;
+}
+
+.about-brief ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
 }
 
 .about-brief li {
@@ -436,8 +525,15 @@ form.settings {
 	padding-top: 5px;
 }
 
+.sort-links ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline;
+}
+
 .sort-links li {
-	display: inline-block;
+	display: inline;
 	margin-left: 44px;
 }
 

@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 		<title>Студия "Нердс"</title>
 		<link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/normalize.css" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:500&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
 
@@ -14,24 +16,26 @@
                         <img src="img/logo.png" width="139" height="56" alt="Студия Нердс">
                     </a>
 				</div>
-                <div class="recycle-block">
-					<a class="transit" href="#">КОРЗИНА</a>
-				</div>
-				<nav class="main-navigation">
-					<ul>
-						<li>
-							<a href="#">СТУДИЯ</a>
-						</li>
-						<li>
-							<a href="#">КЛИЕНТЫ</a>
-						</li>
-						<li>
-							<a href="catalog.html">МАГАЗИН</a>
-						</li>
-						<li>
-							<a href="#">КОНТАКТЫ</a>
-						</li>
-					</ul>
+                <nav class="main-navigation">
+                    <div class="recycle-block">
+    					<a class="transit" href="#">КОРЗИНА</a>
+    				</div>
+    				<div class="menu-navigation">
+    					<ul>
+    						<li>
+    							<a href="#">СТУДИЯ</a>
+    						</li>
+    						<li>
+    							<a href="#">КЛИЕНТЫ</a>
+    						</li>
+    						<li>
+    							<a href="catalog.html">МАГАЗИН</a>
+    						</li>
+    						<li>
+    							<a href="#">КОНТАКТЫ</a>
+    						</li>
+    					</ul>
+                    </div>
 				</nav>
 			</div>
 			<div class="layout-positioner clearfix">
@@ -55,12 +59,18 @@
         				</div>
                     </div>
                 </div>
-				<div class="promo-right">
+		<div class="promo-right">
                     <img src="img/slide1.png" />
-                    <!-- <img src="img/slide2.png" />
-                    <img src="img/slide3.png" /> -->
-				</div>
-			</div>
+		    <img src="img/slide2.png" />
+		    <img src="img/slide3.png" />
+		</div>
+                <!-- <div class="promo-right">
+                    <img src="img/slide2.png" />
+                </div>
+                <div class="promo-right">
+                    <img src="img/slide3.png" />
+                </div> -->
+            </div>
 		</header>
 
 		<main>
@@ -69,7 +79,7 @@
                     <img src="img/service-sites.png" alt="Создаем сайты"/>
                     <h2>ВЕБ-САЙТЫ</h2>
                     <p>Мир никогда не будет прежним после того как увидит наш сайт</p>
-                    <a class="btn btn-red" href="#">Заказать</a>
+                    <a class="btn" href="#">Заказать</a>
                 </div>
                 <div class="service-item">
                     <img src="img/service-apps.png" alt="Создаем мобильные приложения"/>
