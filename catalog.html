@@ -21,13 +21,13 @@
                     <div class="menu-navigation">
                         <ul>
                             <li>
-                                <a href="#">СТУДИЯ</a>
+                                <a href="index.html">СТУДИЯ</a>
                             </li>
                             <li>
                                 <a href="#">КЛИЕНТЫ</a>
                             </li>
                             <li>
-                                <a href="catalog.html">МАГАЗИН</a>
+                                <a class="on-page" href="catalog.html">МАГАЗИН</a>
                             </li>
                             <li>
                                 <a href="#">КОНТАКТЫ</a>
@@ -41,8 +41,8 @@
             </div>
         </header>
 
-        <main class="layout-positioner clearfix">
-
+        <main>
+        <div class="layout-positioner clearfix">
             <form class="settings">
                 <fieldset>
                     <legend>
@@ -72,15 +72,15 @@
                         СЕТКА:
                     </legend>
                     <div class="select-block">
-                        <input type="radio" name="grid_type" id="grid_adapt" checked/><span></span>
+                        <input type="radio" name="grid_type" id="grid_adapt" checked/>
                         <label for="grid_adapt">Адаптивная</label>
                     </div>
                     <div class="select-block">
-                        <input type="radio" name="grid_type" id="grid_fixed" /><span></span>
+                        <input type="radio" name="grid_type" id="grid_fixed" />
                         <label for="grid_fixed">Фиксированная</label>
                     </div>
                     <div class="select-block">
-                        <input type="radio" name="grid_type" id="grid_rubber" /><span></span>
+                        <input type="radio" name="grid_type" id="grid_rubber" />
                         <label for="grid_rubber">Резиновая</label>
                     </div>
                 </fieldset>
@@ -89,34 +89,34 @@
                         ОСОБЕННОСТИ:
                     </legend>
                     <div class="select-block">
-                        <input type="checkbox" name="features" id="f_slider" checked/><span></span>
+                        <input type="checkbox" name="features" id="f_slider" checked/>
                         <label for="f_slider">Слайдер</label>
                     </div>
                     <div class="select-block">
-                        <input type="checkbox" name="features" id="f_advant" /><span></span>
+                        <input type="checkbox" name="features" id="f_advant" />
                         <label for="f_advant">Блок приемуществ</label>
                     </div>
                     <div class="select-block">
-                        <input type="checkbox" name="features" id="f_news" checked/><span></span>
+                        <input type="checkbox" name="features" id="f_news" checked/>
                         <label for="f_news">Новости</label>
                     </div>
                     <div class="select-block">
-                        <input type="checkbox" name="features" id="f_galery" /><span></span>
+                        <input type="checkbox" name="features" id="f_galery" />
                         <label for="f_galery">Галерея</label>
                     </div>
                     <div class="select-block">
-                        <input type="checkbox" name="features" id="f_bin" /><span></span>
+                        <input type="checkbox" name="features" id="f_bin" />
                         <label for="f_bin">Корзина</label>
                     </div>
                 </fieldset>
-                <button>Показать</button>
+                <input type="submit" class="btn btn-gray" value="Показать" />
             </form>
 
-            <div class="layouts-catalog">
+            <section class="layouts-catalog">
                 <div class="sort-links">
                     <b>СОРТИРОВАТЬ:</b>
                     <ul>
-                        <li>
+                        <li class="link-active">
                             <a href="#">ПО ЦЕНЕ</a>
                         </li>
                         <li>
@@ -126,8 +126,8 @@
                             <a href="#">ПО ФУНКЦИОНАЛУ</a>
                         </li>
                     </ul>
-                    <a href="#" class="toggle-down"></a>
                     <a href="#" class="toggle-up"></a>
+                    <a href="#" class="toggle-down toggle-sorted"></a>
                 </div>
 
                 <div class="layout-small">
@@ -239,13 +239,14 @@
                 </div>
 
                 <div class="buttons-block">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>СЛЕДУЮЩАЯ</button>
+                    <button class="btn btn-gray" disabled>1</button>
+                    <button class="btn btn-gray">2</button>
+                    <button class="btn btn-gray">3</button>
+                    <button class="btn btn-gray">СЛЕДУЮЩАЯ</button>
                 </div>
 
-            </div>
+            </section>
+        </div>
         </main>
 
         <footer class="main-footer">
@@ -265,9 +266,9 @@
             </div>
             <div class="main-footer-social layout-positioner clearfix">
                 <div class="left-block">
-                    <a class="social-roundel" href="#">vk</a>
-                    <a class="social-roundel" href="#">fb</a>
-                    <a class="social-roundel" href="#">instag</a>
+                    <a class="social-item social-vk" href="#">vk</a>
+                    <a class="social-item social-fb" href="#">fb</a>
+                    <a class="social-item social-instag" href="#">instag</a>
                 </div>
                 <div class="right-block">
                     <p class="text-accented">Давайте дружить, это выгодно!</p>
