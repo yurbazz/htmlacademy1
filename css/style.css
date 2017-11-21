@@ -16,7 +16,7 @@ fieldset,legend,input {
 	padding: 0px;
 }
 
-fieldset,input {
+fieldset{
 	border: 0px;
 }
 
@@ -171,7 +171,7 @@ a {
 	opacity: 0.4;
 }
 
-.main-navigation a.on-page {
+.main-navigation .on-page {
 	border-bottom: solid 2px #fb565a;
 	padding-bottom: 4px;
 }
@@ -422,7 +422,6 @@ main .services {
 
 .settings .btn {
 	width: 155px;
-	padding-top: 10px;
 }
 
 /* SETTINGS selectors */
@@ -431,6 +430,7 @@ main .services {
 	display: inline-block;
 	height: 38px;
 	width: 80px;
+	border: 0px;
 	border-radius: 5px;
 	background-color: #f1f1f1;
 	vertical-align: middle;
@@ -859,4 +859,106 @@ main .services {
 
 .main-footer-social .social-item:active {
 	background-color: #d6494d;
+}
+
+/* MODAL FORM */
+
+.modal-form {
+	width: 460px;
+	min-height: 364px;
+	position: absolute;
+	background-color: white;
+	top: 1590px;
+	left: 50%;
+	margin-left: -320px;
+	z-index: 100;
+	box-shadow: 0px 20px 40px rgba(0,0,0,0.75);
+	padding-top: 54px;
+	padding-left: 80px;
+	padding-right: 88px;
+}
+
+button.modal-form-close {
+	outline: none;
+	border: none;
+	background: none;
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #FB565A;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	cursor: pointer;
+}
+
+button.modal-form-close::before,
+button.modal-form-close::after {
+	content: "";
+	width: 24px;
+	height: 5px;
+	background-color: white;
+	position: absolute;
+	top: 18px;
+	left: 8px;
+}
+
+button.modal-form-close::before {
+	transform: rotate(45deg);
+}
+
+button.modal-form-close::after {
+	transform: rotate(135deg);
+}
+
+.modal-form .input-block {
+	width: 220px;
+	float: left;
+}
+
+.modal-form .input-block:nth-of-type(2) {
+	float: right;
+}
+
+.modal-form .input-block:nth-of-type(3) {
+	width: 100%;
+}
+
+.modal-form label {
+	display: block;
+	line-height: 18px;
+	margin-bottom: 10px;
+}
+
+.modal-form input,
+.modal-form textarea {
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+	font-family: inherit;
+	color: #000000;
+	font-size: 12px;
+	line-height: 18px;
+	box-sizing: border-box;
+}
+
+.modal-form input {
+	width: 100%;
+	padding: 8px 14px;
+	margin-bottom: 20px;
+}
+
+.modal-form textarea {
+	width: 100%;
+	height: 110px;
+	padding: 8px 14px;
+	resize: none;
+	margin-bottom: 46px;
+}
+
+.modal-form .btn {
+	width: 100%;
+	border: none;
+	padding: 0;
+	line-height: 38px;
 }
