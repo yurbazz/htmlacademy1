@@ -10,66 +10,74 @@
 	<body>
 
 		<header class="main-header">
-			<div class="layout-positioner clearfix">
-				<div class="main-logo">
-					<a>
-                        <img src="img/logo.png" width="139" height="56" alt="Студия Нердс">
-                    </a>
-				</div>
-                <nav class="main-navigation">
-                    <div class="recycle-block">
-    					<a class="transit" href="#">КОРЗИНА</a>
+            <div class="layout-positioner">
+                <div class="top clearfix">
+    				<div class="main-logo">
+    					<a>
+                            <img src="img/logo.png" width="139" height="56" alt="Студия Нердс">
+                        </a>
     				</div>
-    				<div class="menu-navigation">
-    					<ul>
-    						<li>
-    							<a class="on-page" href="index.html">СТУДИЯ</a>
-    						</li>
-    						<li>
-    							<a href="#">КЛИЕНТЫ</a>
-    						</li>
-    						<li>
-    							<a href="catalog.html">МАГАЗИН</a>
-    						</li>
-    						<li>
-    							<a href="#">КОНТАКТЫ</a>
-    						</li>
-    					</ul>
+                    <nav class="main-navigation">
+                        <div class="recycle-block">
+        					<a class="transit" href="#">КОРЗИНА</a>
+        				</div>
+        				<div class="menu-navigation">
+        					<ul>
+        						<li>
+        							<a class="on-page" href="index.html">СТУДИЯ</a>
+        						</li>
+        						<li>
+        							<a href="#">КЛИЕНТЫ</a>
+        						</li>
+        						<li>
+        							<a href="catalog.html">МАГАЗИН</a>
+        						</li>
+        						<li>
+        							<a href="#">КОНТАКТЫ</a>
+        						</li>
+        					</ul>
+                        </div>
+    				</nav>
+    			</div>
+    			<div class="slider clearfix">
+                    <input type="radio" id="slider1" name="slider" checked/>
+                    <input type="radio" id="slider2" name="slider"/>
+                    <input type="radio" id="slider3" name="slider"/>
+                    <div class="slider-controls">
+                        <label for="slider1"></label>
+                        <label for="slider2"></label>
+                        <label for="slider3"></label>
                     </div>
-				</nav>
-			</div>
-			<div class="layout-positioner clearfix">
-                <div class="promo-left">
-    				<div class="promo-text">
-    					<b class="text-accented">Долго, дорого, скрупулезно.</b>
-                        <!--<b>Любите ли вы математику,как любим ее мы?</b>-->
-                        <!-- <b>Только наркотики, только хардкор!</b> -->
-    					<span>Математически выверенный дизайн<br>
-                            для вашего сайта или мобильного приложения</span>
-                        <!-- <span>Нашим дизайнерам мы удаляем нейроны, ответственные<br>
-                            за креатив, чтобы дать им возможность все просчитать</span> -->
-                        <!-- <span>Все дизайнерские решения в нашей компании принимаются
-                        только под воздействием качественных галлюциногенов</span> -->
-    					<a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
-        				<div class="slider-checkbox-outer">
-        				</div>
-                        <div class="slider-checkbox-outer">
-        				</div>
-                        <div class="slider-checkbox-outer">
-        				</div>
+                    <div class="slides">
+                        <div class="slide">
+            				<div class="promo-text">
+            					<b class="text-accented">Долго, дорого,<br />скрупулезно.</b>
+            					<span>Математически выверенный дизайн<br>
+                                    для вашего сайта или мобильного приложения
+                                </span>
+                                <a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="promo-text">
+                                <b class="text-accented">Любите ли вы математику, как любим ее мы?</b>
+                                <span>Нашим дизайнерам мы удаляем нейроны, ответственные<br>
+                                    за креатив, чтобы дать им возможность все просчитать
+                                </span>
+                                <a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="promo-text">
+                                <b class="text-accented">Только наркотики,<br /> только хардкор!</b>
+                                <span>Все дизайнерские решения в нашей компании принимаются
+                                только под воздействием качественных галлюциногенов
+                                </span>
+                                <a class="btn" href="#">УЗНАТЬ БОЛЬШЕ</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-		<div class="promo-right">
-            <img src="img/slide1.png" />
-		    <img src="img/slide2.png" />
-		    <img src="img/slide3.png" />
-		</div>
-                <!-- <div class="promo-right">
-                    <img src="img/slide2.png" />
-                </div>
-                <div class="promo-right">
-                    <img src="img/slide3.png" />
-                </div> -->
             </div>
 		</header>
 
@@ -197,4 +205,5 @@
         </form>
 
 	</body>
-</html>
+
+	<script src="js/popup.js"></script>
